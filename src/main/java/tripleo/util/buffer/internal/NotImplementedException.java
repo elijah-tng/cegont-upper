@@ -1,4 +1,4 @@
-package tripleo.util;
+package tripleo.util.buffer.internal;
 
 public class NotImplementedException extends RuntimeException {
    public NotImplementedException() {
