@@ -5,11 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>tripleo.elijah</groupId>
-	<!-- <artifactId>elijah-prolific-remnant</artifactId> -->
 	<packaging>jar</packaging>
 
-	<name>eljc-prolific-remnant</name>
-	<url>http://github.com/elijah-team/radical-paradox/</url>
+	<name>elijah-cegont-upper</name>
+	<url>https://github.com/elijah-tng/cegont-upper</url>
 	<artifactId>elijah-cegont-upper</artifactId>
 	<version>0.1-prolific-remnant</version>
 
@@ -61,7 +60,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub elijah-team/fluffy-umbrella Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/elijah-team/prolific-remnant</url>
+			<url>https://maven.pkg.github.com/elijah-team/radical-paradox</url>
 		</repository>
 	</distributionManagement>
 
