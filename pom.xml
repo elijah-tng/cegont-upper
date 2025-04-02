@@ -88,7 +88,7 @@
 				<version>3.3.0</version>
 				<configuration>
 					<outputDirectory>./target/</outputDirectory>
-					<finalName>elijah-cegont-upper-0.1-prolific-remnant-sources.jar</finalName>
+					<!-- <finalName>elijah-cegont-upper-0.1-prolific-remnant-sources.jar</finalName>-->
 					<attach>true</attach>
 				</configuration>
 				<executions>
