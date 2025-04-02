@@ -22,7 +22,7 @@ unset GREP_OPTIONS
 CHANGE_ID_AFTER="Bug|Depends-On|Issue|Test|Feature|Fixes|Fixed"
 MSG="$1"
 
-# Check for, and add if missing, a unique Change-Id
+# Check for, and add if missing, a unique Elijah-Change-Id
 #
 add_ChangeId() {
 	clean_message=`sed -e '
@@ -38,7 +38,7 @@ add_ChangeId() {
 		return
 	fi
 
-	# Do not add Change-Id to temp commits
+	# Do not add Elijah-Change-Id to temp commits
 	if echo "$clean_message" | head -1 | grep -q '^\(fixup\|squash\)!'
 	then
 		return
@@ -49,8 +49,8 @@ add_ChangeId() {
 		return
 	fi
 
-	# Does Change-Id: already exist? if so, exit (no change).
-	if grep -i '^Change-Id:' "$MSG" >/dev/null
+	# Does Elijah-Change-Id: already exist? if so, exit (no change).
+	if grep -i '^Elijah-Change-Id:' "$MSG" >/dev/null
 	then
 		return
 	fi
@@ -145,13 +145,13 @@ add_ChangeId() {
 	}
 
 	# Footer handling:
-	# If the last block is considered a footer, splice in the Change-Id at the
+	# If the last block is considered a footer, splice in the Elijah-Change-Id at the
 	# right place.
-	# Look for the right place to inject Change-Id by considering
+	# Look for the right place to inject Elijah-Change-Id by considering
 	# CHANGE_ID_AFTER. Keys listed in it (case insensitive) come first,
-	# then Change-Id, then everything else (eg. Signed-off-by:).
+	# then Elijah-Change-Id, then everything else (eg. Signed-off-by:).
 	#
-	# Otherwise just print the last block, a new line and the Change-Id as a
+	# Otherwise just print the last block, a new line and the Elijah-Change-Id as a
 	# block of its own.
 	END {
 		unprinted = 1
@@ -164,12 +164,12 @@ add_ChangeId() {
 		for (line = 1; line <= numlines; line++) {
 			if (unprinted && match(tolower(footer[line]), changeIdAfter) != 1) {
 				unprinted = 0
-				print "Change-Id: I'"$id"'"
+				print "Elijah-Change-Id: I'"$id"'"
 			}
 			print footer[line]
 		}
 		if (unprinted) {
-			print "Change-Id: I'"$id"'"
+			print "Elijah-Change-Id: I'"$id"'"
 		}
 	}' "$MSG" > "$T" && mv "$T" "$MSG" || rm -f "$T"
 }
