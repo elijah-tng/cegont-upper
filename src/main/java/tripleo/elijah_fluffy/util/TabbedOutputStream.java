@@ -125,10 +125,10 @@ public class TabbedOutputStream {
     public void quote_string(final @NotNull String s) throws IOException {
         if (!is_connected()) throw new IllegalStateException("is_connected assertion failed");
 
-		myStream.write(34);
-		myStream.write(s);
-		myStream.write(34);
-	}
+        myStream.write('\"');
+        myStream.write(s);
+        myStream.write('\"');
+    }
 
     public void flush() throws IOException {
         myStream.flush();
