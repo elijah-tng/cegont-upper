@@ -47,7 +47,7 @@ public class Operation<T> /* extends Operation2<T> */ {
 		}
 	}
 
-	private static <T> Operation<T> failure(final ElDiagnostic d) {
+	public static <T> Operation<T> failure(final ElDiagnostic d) {
 		return new Operation<>(null, new DiagnosticException(d), Mode.FAILURE);
 	}
 
