@@ -1,12 +1,27 @@
 package tripleo.elijah_fluffy.util;
 
-public final class Ok {
-	static final Ok ok = new Ok();
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
-	public static Ok instance() {
-		return ok;
-	}
+public class Ok {
+    private static final Ok INSTANCE   = new Ok(null);
 
-	private Ok() {
+	public final String locationMarker;
+
+    private Ok(final String aLocationMarker) {
+        locationMarker = aLocationMarker;
+    }
+
+    public static Ok instance() {
+        return INSTANCE;
+    }
+
+    @Contract(value = "_ -> new", pure = true)
+    public static @NotNull Ok not(String locationMarker) {
+        return new Ok(locationMarker);
+    }
+
+	public boolean isOk() {
+		return locationMarker != null;
 	}
 }
