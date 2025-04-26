@@ -1,8 +1,6 @@
 package tripleo.elijah_fluffy.util;
 
-
-public class SimplePrintLoggerToRemoveSoon {
-
+public class LoudMouthComplaint {
 	private static final boolean DEBUG_ON = false;
 
 	public static void println_err(final String aS) {
@@ -17,6 +15,7 @@ public class SimplePrintLoggerToRemoveSoon {
 		if (DEBUG_ON) System.out.println("" + aS);
 	}
 
+	// todo write a parser and push it into sw.else.
 	public static void println_err2(final String aS) {
 		if (DEBUG_ON) System.err.println("" + aS);
 	}
