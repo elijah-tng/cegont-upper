@@ -10,7 +10,7 @@
 	<name>elijah-cegont-upper</name>
 	<url>https://github.com/elijah-tng/cegont-upper</url>
 	<artifactId>elijah-cegont-upper</artifactId>
-	<version>2025.04.21</version>
+	<version>2025.04.21-location</version>
 
 
 	<dependencies>
