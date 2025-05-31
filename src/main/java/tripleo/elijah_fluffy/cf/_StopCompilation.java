@@ -1,4 +1,4 @@
-package tripleo.elijah_fluffy.diagnostic;
+package tripleo.elijah_fluffy.cf;
 
 public class _StopCompilation extends RuntimeException {
 	public _StopCompilation(final Exception e) {
