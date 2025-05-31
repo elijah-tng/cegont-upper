@@ -21,7 +21,7 @@ public class Diagnostic_9985 implements ElDiagnostic {
 
 	@Override
 	public String code() {
-		return "9995";
+		return "9985";
 	}
 
 	@Override
