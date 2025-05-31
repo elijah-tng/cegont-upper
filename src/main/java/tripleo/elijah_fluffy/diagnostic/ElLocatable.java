@@ -29,28 +29,37 @@ public interface ElLocatable {
 
 	File getFile();
 
+	LocatableKind getLocatableKind();
+
 	enum LocatableKind {
-		QuerySearchEzFiles {
+		ProcessKind {
+			@Override
+			public boolean isProcess() {
+				return true;
+			}
+
+			@Override public boolean isQuery() {return false;}
+			@Override public boolean isSpan() {return false;}
+		},
+		QueryKind {
+			@Override public boolean isProcess() {return false;}
+			@Override public boolean isSpan() {return false;}
+
 			@Override
 			public boolean isQuery() {
 				return true;
 			}
-
-			@Override
-			public boolean isSpan() {
-				return false;
-			}
 		}, TextSpan {
-			@Override
-			public boolean isQuery() {
-				return false;
-			}
+			@Override public boolean isProcess() {return false;}
+			@Override public boolean isQuery() {return false;}
 
 			@Override
 			public boolean isSpan() {
 				return true;
 			}
 		};
+
+		public abstract boolean isProcess();
 
 		public abstract boolean isQuery();
 
