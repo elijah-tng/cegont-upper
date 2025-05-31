@@ -38,19 +38,20 @@
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-
+		<downloadSources>true</downloadSources>
 		<javaVersion>17</javaVersion>
 
-		<downloadSources>true</downloadSources>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
 
 	<repositories>
 		<!--
-				<repository>
-					<id>jitpack</id>
-					<url>https://jitpack.io</url>
-				</repository>
+		<repository>
+			<id>jitpack</id>
+			<url>https://jitpack.io</url>
+		</repository>
 		-->
 		<repository>
 			<id>maven_central</id>
