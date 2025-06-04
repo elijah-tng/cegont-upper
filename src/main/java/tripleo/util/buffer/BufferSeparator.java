@@ -1,8 +1,8 @@
 package tripleo.util.buffer;
 
-import tripleo.util.buffer.internal.*;
+import tripleo.util.buffer.internal.NotImplementedException;
 
-public enum XX {
+public enum BufferSeparator {
    SPACE,
    LPAREN,
    RPAREN,
