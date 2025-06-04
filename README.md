@@ -59,7 +59,7 @@ Elijah is:
 
 1. Add commons-codec?
 
-2. Gradle adds some nice things to publishing, fwiw.
+2. Gradle adds some nice things to publishing, fwiw. (cf gl)
 
 2b. `develocity` is for enterprise.  Elijah is just a rocket.
 
