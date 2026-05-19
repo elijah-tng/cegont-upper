@@ -132,9 +132,9 @@ public class TabbedOutputStream {
 		if (!is_connected())
 			throw new IllegalStateException("is_connected assertion failed");
 
-        myStream.write('\"');
+		myStream.write(34);
 		myStream.write(s);
-        myStream.write('\"');
+		myStream.write(34);
 	}
 
 	public void flush() throws IOException {
