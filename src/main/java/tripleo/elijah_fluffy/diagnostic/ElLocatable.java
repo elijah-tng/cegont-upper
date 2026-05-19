@@ -19,43 +19,48 @@ import java.io.*;
  * Created 12/26/20 5:32 AM
  */
 public interface ElLocatable {
-	int getLine();
+    int getLine();
 
-	int getColumn();
+    int getColumn();
 
-	int getLineEnd();
+    int getLineEnd();
 
-	int getColumnEnd();
+    int getColumnEnd();
 
-	File getFile();
+    File getFile();
 
-	enum LocatableKind {
-		QuerySearchEzFiles {
-			@Override
-			public boolean isQuery() {
-				return true;
-			}
+    LocatableKind getLocatableKind();
 
-			@Override
-			public boolean isSpan() {
-				return false;
-			}
-		}, TextSpan {
-			@Override
-			public boolean isQuery() {
-				return false;
-			}
+    enum LocatableKind {
+        ProcessKind {
+            @Override
+            public boolean isProcess() {
+                return true;
+            }
+        }, QueryKind {
+            @Override
+            public boolean isQuery() {
+                return true;
+            }
+        }, TextSpan {
+            @Override
+            public boolean isSpan() {
+                return true;
+            }
+        };
 
-			@Override
-			public boolean isSpan() {
-				return true;
-			}
-		};
+        public boolean isProcess() {
+            return false;
+        }
 
-		public abstract boolean isQuery();
+        public boolean isQuery() {
+            return false;
+        }
 
-		public abstract boolean isSpan();
-	}
+        public boolean isSpan() {
+            return false;
+        }
+    }
 }
 
 //
