@@ -1,6 +1,5 @@
 package tripleo.elijah_fluffy.util;
 
-import org.jetbrains.annotations.*;
 
 public class SimplePrintLoggerToRemoveSoon {
 
@@ -14,7 +13,7 @@ public class SimplePrintLoggerToRemoveSoon {
 		if (DEBUG_ON) System.out.println(aS);
 	}
 
-  public static void println2(final String aS) {
+	public static void println2(final String aS) {
 		if (DEBUG_ON) System.out.println("" + aS);
 	}
 
@@ -24,12 +23,12 @@ public class SimplePrintLoggerToRemoveSoon {
 
 	public static void println_out_2(final String aS) {
 		if (DEBUG_ON) System.out.println("" + aS);
-  }
+	}
 
-	// /*
-	//  * Make a note of workarounds
-	//  */
-	// public static void ilf(final String aS) {
-	// 	System.out.println("[ilf] " + aS);
-	// }
+	/*
+	 * Make a note of workarounds
+	 */
+	public static void ilf(final String aS) {
+		System.out.println("[ilf] " + aS);
+	}
 }
