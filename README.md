@@ -3,51 +3,34 @@ Elijah cegont-upper (prolific-remnant)
 
 The elijah-lang compiler/package manager.
 
-`prolific-remnant` is derived from problem-set-1004 with minimal extras, this repo notwithstanding.
+`prolific-remnant` is derived from problem-set-1004 with minimal extras.
 
-## RATIONALE
+`cegont-upper` is lazy and slow to pull common things together (because I couldn't find the old one that does this better).
 
-*tldr*: half-ass cegont-upper in the purpose of gh ci
 
-`cegont-upper` is a half-ass attempt at compiling less in an unpublished multi-project
-pom where we put the things that don't change much.
+## NOTES
 
-The vendoring is wrong, I think - proguard is our friend here.
+The vendoring is wrong: We can use our own `Pair`.
 
-Also something bothers me about range and buffers.
+Range and Buffers will be updated later, gl strange.
 
 With less diatribe, most everything here needs to change.
 
-
-## Notes
-
-- Restored generic to Buffer.../Transform
-
-- Using internal NIE
-
-- Including commons-lang3 here like it is is "less than optimal".
+`QuerySearchEzFiles` and `ilf` and `asLocatable` \(are nonsense\) 
 
 
-## LICENSES
+## CHANGES
 
-We are (quasi illegally) vendoring: 
-
-* commons-lang3 (Apache)
-* antlr (prob public domain)
-* jdeferred2 (prob LGPL2, maybe with classpath exception)
+- Added `StringAdder`
+- Some things from `2025.04.21-enhance`
+- Some things from `2025.04.21-location`
+- .
 
 
 ## BLATHER
 
 Elijah is:
 
-- ... not actually related to snakes.
+- ... happy about snakes.
 - ... an interesting time-sink.
-- ... free software (LGPL) intended for use on all systems, even Windows.
-
-
-## TODO
-
-1. Add commons-codec?
-
-2. Gradle adds some nice thing to publishing, fwiw.
+- ... free software (LGPL).

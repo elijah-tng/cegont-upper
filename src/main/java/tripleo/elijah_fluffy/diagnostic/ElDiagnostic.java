@@ -73,7 +73,7 @@ public interface ElDiagnostic {
 	}
 
 	enum Severity {
-		INFO, LINT, WARN, FATAL, ERROR
+		INFO, LOG, LINT, WARN, FATAL, ERROR
 	}
 }
 

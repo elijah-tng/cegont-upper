@@ -15,6 +15,11 @@ public class Operation<T> /* extends Operation2<T> */ {
 		return op;
 	}
 
+	public static <T> @NotNull Operation<T> failure(final Throwable aException) {
+		final Operation<T> op = new Operation<>(null, aException, Mode.FAILURE);
+		return op;
+	}
+
 	public static <T> @NotNull Operation<T> success(final T aSuccess) {
 		final Operation<T> op = new Operation<>(aSuccess, null, Mode.SUCCESS);
 		return op;
