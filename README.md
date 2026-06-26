@@ -11,6 +11,7 @@ The elijah-lang compiler/package manager.
 ## NOTES
 
 The vendoring is wrong: We can use our own `Pair`.
+- Proguard and jacoco do shaking, or something similar, maybe?
 
 Range and Buffers will be updated later, gl strange.
 
