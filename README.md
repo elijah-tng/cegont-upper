@@ -34,3 +34,8 @@ Elijah is:
 - ... happy about snakes.
 - ... an interesting time-sink.
 - ... free software (LGPL).
+
+
+---
+
+This commit mostly supercedes and ... 2025.04.21-enhance @ dbda13732cc22d97d01a391f865612bd91479872

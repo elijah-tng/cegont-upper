@@ -65,7 +65,7 @@ public class DefaultBuffer implements TextBuffer {
       this.doIndent();
    }
 
-   public void append_s(String string, BufferSeparator sep) {
+   public void append_s(String string, _BufferSeparator sep) {
       this.text.append(string);
       this.text.append(sep.getText());
    }

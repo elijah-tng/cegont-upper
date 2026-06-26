@@ -45,7 +45,7 @@ public class BufferSequenceBuilder {
       return bsq;
    }
 
-   public void set(String part_name, String setTo, BufferSeparator sep) {
+   public void set(String part_name, String setTo, _BufferSeparator sep) {
       this.parts.put(part_name, new DefaultBuffer(setTo + sep.toString()));
    }
 

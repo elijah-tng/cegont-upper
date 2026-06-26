@@ -41,10 +41,8 @@
 
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-		<!--<downloadSources>true</downloadSources>-->
+		<project.build.sourceEncoding>ASCII</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>ASCII</project.reporting.outputEncoding>
 
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
@@ -53,16 +51,21 @@
 
 
 	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Maven Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>jitpack</id>
+			<url>https://jitpack.io</url>
+		</repository>
+		<!--heim,m4????-->
 		<!--
-<repository>
-	<id>jitpack</id>
-	<url>https://jitpack.io</url>
-</repository>
-<repository>
-	<id>maven_central</id>
-	<name>Maven Central</name>
-	<url>https://repo.maven.apache.org/maven2/</url>
-</repository>
+		<repository>
+			<id>jboss,sonatype</id>
+			<meta>disabled??</meta>
+		</repository>
 		-->
 	</repositories>
 
@@ -102,13 +105,13 @@
 					<!-- <finalName>elijah-cegont-upper-0.1-prolific-remnant-sources.jar</finalName>-->
 					<attach>true</attach>
 				</configuration>
-          	    <executions>
-                   <execution>
-                     <id>attach-sources</id>
-                     <goals>
-                       <goal>jar-no-fork</goal>
-                     </goals>
-			      </execution>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
 				</executions>
 			</plugin>
 			<plugin>
