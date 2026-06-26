@@ -38,4 +38,5 @@ Elijah is:
 
 ---
 
-This commit mostly supercedes and ... 2025.04.21-enhance @ dbda13732cc22d97d01a391f865612bd91479872
+This commit mostly supercedes and incorporates 2025.04.21-enhance @ dbda13732cc22d97d01a391f865612bd91479872
+This commit mostly supercedes and incorporates 2025.04.21-location @ 08464f131a3348dc2663291e4fd6f9fe27985ee7
