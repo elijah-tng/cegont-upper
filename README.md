@@ -40,8 +40,11 @@ Elijah is:
 ---
 
 This commit mostly supercedes and incorporates 2025.04.21-enhance @ dbda13732cc22d97d01a391f865612bd91479872
+
 This commit mostly supercedes and incorporates 2025.04.21-location @ 08464f131a3348dc2663291e4fd6f9fe27985ee7
 
 These two are the same:
+
 This commit mostly supercedes and incorporates 0.1-prolific-remnant @ 6c224959229d2a8eb164e82cf5e9a4994c98efd1
+
 This commit mostly supercedes and incorporates 0.1-prolific-remnant @ dc1063667e640230540167d9eb9e0ec562c26d8f
