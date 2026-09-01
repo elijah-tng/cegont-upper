@@ -51,3 +51,11 @@ Elijah is:
 1. Add commons-codec?
 
 2. Gradle adds some nice thing to publishing, fwiw.
+
+
+---
+
+Added groovy Lazy
+Changed XX to _BufferSeparator
+
+This commit supercedes 

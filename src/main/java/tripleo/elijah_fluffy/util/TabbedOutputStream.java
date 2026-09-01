@@ -31,9 +31,11 @@ public class TabbedOutputStream {
 
     public TabbedOutputStream(final Writer w, final boolean buffer_it) {
         tabwidth = 0;
-        // if (os == System.out) dont_close = true;
-        if (buffer_it) myStream = new BufferedWriter(w); // new BufferedWriter(new OutputStreamWriter(os));
-        else myStream = w;
+		//if (os == System.out) dont_close = true;
+		if (buffer_it)
+			myStream = new BufferedWriter(w);//new BufferedWriter(new OutputStreamWriter(os));
+		else
+			myStream = w;
     }
 
     public static void main(final String[] args) {
@@ -125,7 +127,7 @@ public class TabbedOutputStream {
     public void quote_string(final @NotNull String s) throws IOException {
         if (!is_connected()) throw new IllegalStateException("is_connected assertion failed");
 
-        myStream.write('\"');
+        myStream.write('\"'); // ascii 34; don't ask me
         myStream.write(s);
         myStream.write('\"');
     }

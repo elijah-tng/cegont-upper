@@ -11,7 +11,7 @@ public class EnclosedBuffer extends DefaultBuffer {
       this._right = right;
    }
 
-   public EnclosedBuffer(String left, XX right) {
+   public EnclosedBuffer(String left, _BufferSeparator right) {
       super("");
       this._left = left;
       this._right = right.getText();
