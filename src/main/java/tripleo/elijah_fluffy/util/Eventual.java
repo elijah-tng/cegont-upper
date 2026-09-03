@@ -1,8 +1,8 @@
 //package tripleo.elijah_fluffy.util;
 //
-//import org.jdeferred2.DoneCallback;
-//import org.jdeferred2.FailCallback;
-//import org.jdeferred2.impl.DeferredObject;
+//import tripleo.vendor.org_jdeferred2.DoneCallback;
+//import tripleo.vendor.org_jdeferred2.FailCallback;
+//import tripleo.vendor.org_jdeferred2.impl.DeferredObject;
 //import org.jetbrains.annotations.NotNull;
 //
 //public class Eventual<P> {

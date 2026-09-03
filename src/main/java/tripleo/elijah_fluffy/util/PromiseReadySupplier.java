@@ -1,6 +1,7 @@
 package tripleo.elijah_fluffy.util;
 
-import org.jdeferred2.*;
+import tripleo.vendor.org_jdeferred2.DoneCallback;
+import tripleo.vendor.org_jdeferred2.Promise;
 
 public class PromiseReadySupplier<T> implements ReadySupplier<T> {
 	private final Promise<T, Void, Void> p;
