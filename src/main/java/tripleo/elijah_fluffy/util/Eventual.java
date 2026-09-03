@@ -4,7 +4,6 @@ import org.jdeferred2.DoneCallback;
 import org.jdeferred2.FailCallback;
 import org.jdeferred2.impl.DeferredObject;
 import org.jetbrains.annotations.NotNull;
-import tripleo.elijah_fluffy.diagnostic.ElDiagnostic;
 
 public class Eventual<P> {
 	private final DeferredObject<P, ElDiagnostic, Void> prom = new DeferredObject<>();
