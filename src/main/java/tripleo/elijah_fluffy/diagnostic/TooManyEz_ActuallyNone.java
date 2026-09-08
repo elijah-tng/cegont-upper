@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.*;
 
 public class TooManyEz_ActuallyNone implements ElDiagnostic {
-	final String message = "No .ez files found.";
+	private final String message = "No .ez files found.";
 
 	@Override
 	public String code() {
