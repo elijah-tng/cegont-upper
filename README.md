@@ -59,3 +59,26 @@ Added groovy Lazy
 Changed XX to _BufferSeparator
 
 This commit supercedes 
+
+
+
+
+## GUIDANCE
+
+```xml
+		<dependency>
+			<groupId>io.github.elijah-tng</groupId>
+			<artifactId>cegont-upper</artifactId>
+			<!--			<groupId>tripleo.elijah</groupId>-->
+			<!--			<artifactId>elijah-cegont-upper</artifactId>-->
+			<!--			<version>2025.04.21+lazy</version>-->
+			<!--<version>v2025.04.21+lazy</version> this is invalid or malformed or something-->
+			<!--<version>57ad740f</version> could be an error or misconfiguration-->
+			<version>0.260519.0</version> fell back to this one, no clue
+		</dependency>
+```
+
+
+
+
+
