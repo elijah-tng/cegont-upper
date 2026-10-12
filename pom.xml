@@ -10,7 +10,7 @@
 
 	<groupId>tripleo.elijah</groupId>
 	<artifactId>elijah-cegont-upper</artifactId>
-	<version>2025.04.21+lazy</version>
+	<version>2025.04.21xlazy</version>
 
 
 	<dependencies>

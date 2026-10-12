@@ -10,7 +10,7 @@ import tripleo.elijah_fluffy.diagnostic.*;
  */
 @SuppressWarnings("UnnecessaryLocalVariable")
 public class Operation<T> /* extends Operation2<T> */ {
-	public static <T> @NotNull Operation<T> failure(final Exception aException) {
+	public static <T> @NotNull Operation<T> failure(final Throwable /*Exception*/ aException) {
 		final Operation<T> op = new Operation<>(null, aException, Mode.FAILURE);
 		return op;
 	}
